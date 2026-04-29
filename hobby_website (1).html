@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Hobbies - Programming & Football</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body { background-color: #f5f5f5; }
+    .page-section { display: none; }
+    .page-section.active { display: block; }
+    section {
+      background: white;
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+    section h2 {
+      border-bottom: 2px solid #2c6e49;
+      padding-bottom: 8px;
+      color: #2c6e49;
+    }
+    blockquote {
+      border-left: 4px solid #2c6e49;
+      background: #f1f8f4;
+      padding: 10px 15px;
+      font-style: italic;
+      color: #444;
+    }
+    .gallery-item {
+      background-color: #e8f5e9;
+      border: 1px solid #ccc;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+      border-radius: 4px;
+    }
+    .gallery-item span {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 6px;
+    }
+    footer { background-color: #1b4332; color: #ccc; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color:#1b4332;">
+  <div class="container">
+    <a class="navbar-brand" href="#">⚽ My Hobbies 💻</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#" data-section="home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-section="programming">Programming</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-section="football">Football</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-section="gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-section="about">About Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="text-center text-white py-4" style="background-color:#2c6e49;">
+  <h1 class="h3 mb-1">⚽ My Hobbies 💻</h1>
+  <p class="mb-0" style="font-size:14px;">Welcome to my personal hobby website — Programming &amp; Football</p>
+</div>
+
+<div class="container my-4">
+
+  <!-- HOME -->
+  <div id="home" class="page-section active">
+    <section>
+      <h2>Welcome!</h2>
+      <p>Hello! My name is Prathamesh and this is my hobby website. I have two main hobbies — <strong>programming</strong> and <strong>football</strong>.
+        I also enjoy learning about technology and anything related to it.
+        Feel free to explore the different sections using the navigation bar above.</p>
+    </section>
+
+    <section>
+      <h2>My Two Hobbies</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="border rounded p-3 h-100">
+            <div class="fs-1 text-center">💻</div>
+            <h5 class="text-center">Programming</h5>
+            <p class="mb-0">I love writing code! I started with Python and now I also know HTML, CSS, and a bit of JavaScript. Programming helps me build cool stuff and solve problems.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="border rounded p-3 h-100">
+            <div class="fs-1 text-center">⚽</div>
+            <h5 class="text-center">Football</h5>
+            <p class="mb-0">Football is my favourite sport. I play with my friends on weekends and I follow the Premier League closely. My favourite team is Manchester City.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Quick Facts</h2>
+      <ul class="mb-0">
+        <li>I have been coding for almost <strong>a year</strong> now</li>
+        <li>I have been playing football since I was <strong>8 years old</strong></li>
+        <li>Favourite programming language: <strong>Python</strong></li>
+        <li>Favourite football player: <strong>Erling Haaland</strong></li>
+        <li>I enjoy learning about <strong>technology and related topics</strong></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- PROGRAMMING -->
+  <div id="programming" class="page-section">
+    <section>
+      <h2>💻 Programming</h2>
+      <p>Programming is one of my biggest passions. I started learning about a year ago and quickly got hooked.
+        There is something very satisfying about writing code and seeing it work!
+        I also love keeping up with the latest in technology and the tech world in general.</p>
+      <blockquote>"First, solve the problem. Then, write the code." – John Johnson</blockquote>
+    </section>
+
+    <section>
+      <h2>Languages I Know</h2>
+      <table class="table table-bordered table-striped">
+        <thead class="table-success">
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+            <th>What I Use It For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Python</td><td>Beginner–Intermediate</td><td>Scripts, small projects, automation</td></tr>
+          <tr><td>HTML &amp; CSS</td><td>Beginner</td><td>Building websites (like this one!)</td></tr>
+          <tr><td>JavaScript</td><td>Beginner</td><td>Making web pages interactive</td></tr>
+          <tr><td>C</td><td>Beginner</td><td>School assignments</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Projects I Have Made</h2>
+      <ul class="mb-0">
+        <li><strong>A Portfolio</strong> — Coding Club project</li>
+        <li><strong>Number Guessing Game</strong> — A simple terminal game in Python</li>
+        <li><strong>To-Do List</strong> — A basic HTML/CSS/JS to-do list</li>
+        <li><strong>This Website!</strong> — My hobby site for college</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why I Like Programming</h2>
+      <p class="mb-0">Programming teaches me logical thinking and problem solving. Every time I fix a bug or complete a project,
+        I feel a real sense of achievement. I also like staying updated with technology trends and new tools.
+        I am a FY BCA student at Indira College of Engineering and Management, and also a Coding Club member.</p>
+    </section>
+  </div>
+
+  <!-- FOOTBALL -->
+  <div id="football" class="page-section">
+    <section>
+      <h2>⚽ Football</h2>
+      <p>Football is my favourite sport. Whether it is playing with friends or watching the Premier League, football always gets me excited.</p>
+      <blockquote>"Football is the most important of the less important things in life." – Carlo Ancelotti</blockquote>
+    </section>
+
+    <section>
+      <h2>My Favourite Teams</h2>
+      <table class="table table-bordered table-striped">
+        <thead class="table-success">
+          <tr><th>Team</th><th>League</th><th>Why I Like Them</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Manchester City</td><td>Premier League</td><td>Amazing attacking football, great squad</td></tr>
+          <tr><td>Real Madrid</td><td>La Liga</td><td>Champions League legends</td></tr>
+          <tr><td>My Local Club</td><td>Local League</td><td>I play for them on weekends!</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>My Favourite Players</h2>
+      <ul class="mb-0">
+        <li>⚽ <strong>Cristiano Ronaldo</strong> — Incredible goal scorer</li>
+        <li>⚽ <strong>Jude Bellingham</strong> — Great all-round midfielder</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- GALLERY -->
+  <div id="gallery" class="page-section">
+    <section>
+      <h2>📸 Gallery</h2>
+      <p>Here are some things related to my hobbies. (Placeholder images — I will add real photos later!)</p>
+
+      <h5 class="text-success mt-3">Programming</h5>
+      <div class="row g-3 mb-3">
+        <div class="col-4"><div class="gallery-item"><span>💻</span>My Coding Setup</div></div>
+        <div class="col-4"><div class="gallery-item"><span>🐍</span>Python Project</div></div>
+        <div class="col-4"><div class="gallery-item"><span>🌐</span>My Website</div></div>
+      </div>
+
+      <h5 class="text-success">Football</h5>
+      <div class="row g-3">
+        <div class="col-4"><div class="gallery-item"><span>⚽</span>Saturday Match</div></div>
+        <div class="col-4"><div class="gallery-item"><span>🏟️</span>Stadium Visit</div></div>
+        <div class="col-4"><div class="gallery-item"><span>🥅</span>Training Session</div></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" class="page-section">
+    <section>
+      <h2>About Me</h2>
+      <p>Hi! I am Prathamesh, a student who loves two things above all else — coding and football.
+        I also have a general interest in technology and enjoy reading and learning about it in my spare time.
+        I made this website as part of a college assignment to showcase my hobbies.
+        I built it using HTML, CSS, Bootstrap, and jQuery.</p>
+    </section>
+
+    <section>
+      <h2>Personal Details</h2>
+      <table class="table table-bordered table-striped">
+        <thead class="table-success">
+          <tr><th>Field</th><th>Info</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Name</td><td>Prathamesh Gaikwad</td></tr>
+          <tr><td>College</td><td>Indira College of Engineering and Management</td></tr>
+          <tr><td>Course</td><td>FY BCA</td></tr>
+          <tr><td>Hobby 1</td><td>Programming</td></tr>
+          <tr><td>Hobby 2</td><td>Football</td></tr>
+          <tr><td>Also Interested In</td><td>Technology &amp; Devices</td></tr>
+          <tr><td>Dream Career</td><td>Software Developer</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you want to reach me, you can email me at: <strong>prathameshgaikwad1602@gmail.com</strong></p>
+      <p class="mb-0">Or find me on the football pitch every Saturday morning! ⚽</p>
+    </section>
+  </div>
+
+</div>
+
+<footer class="text-center py-3">
+  <p class="mb-0">Made by Prathamesh Gaikwad &nbsp;|&nbsp; TAE 1 — Hobby Website &nbsp;|&nbsp; 2026</p>
+</footer>
+
+<script>
+  $(document).ready(function () {
+    $('[data-section]').on('click', function (e) {
+      e.preventDefault();
+      var target = $(this).data('section');
+      $('.page-section').hide().removeClass('active');
+      $('#' + target).show().addClass('active');
+    });
+  });
+</script>
+
+</body>
+</html>
